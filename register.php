@@ -60,8 +60,8 @@ else:
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)):
         $returnData = msg(0,422,'Invalid Email Address!');
     
-    elseif(strlen($password) < 8):
-        $returnData = msg(0,422,'Your password must be at least 8 characters long!');
+    elseif(strlen($password) < 5):
+        $returnData = msg(0,422,'Your password must be at least 5 characters long!');
 
     elseif(strlen($firstName) < 3):
         $returnData = msg(0,422,'Your firstName must be at least 3 characters long!');
